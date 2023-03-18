@@ -34,10 +34,10 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/amandeep362",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  linkedin: "https://www.linkedin.com/in/amandeep-singh-699026196",
   gmail: "amanbhatia5710@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
+  facebook: "https://www.facebook.com/amandeep.amanbhatia",
   medium: "https://medium.com/@amanbhatia5710",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -108,7 +108,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Seth Jai Parkash Mukand Lal Institute of Engineering and Technology",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/Jmitlogo.jpg"),
       subHeader: "Bachelor of Technology in information Technology",
       duration: "August 2019 - may 2023",
       descBullets: [
@@ -146,29 +146,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Full Stack Web developer",
+      company: "Heliverse",
+      companylogo: require("./assets/images/Heliverse.jpg"),
+      date: "October 2022 – Present",
+      desc: "Work as a full stack web developer.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Develop a UI of website",
+        "Integrate a api with frontend website",
+        "Optimize a website using redux",
+        "Develop Dashboard of website",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Subject matter expert",
+      company: "Chegg",
+      companylogo: require("./assets/images/chegg.png"),
+      date: "september 2021 – september 2022",
+      desc: "work as a chegg matter expert and resolve the doubts of students in computer science."
     }
   ]
 };
@@ -184,25 +179,25 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/agroacers.png"),
+      projectName: "Agroacers",
+      projectDesc: "AgroAcers is a data-driven full-stack technology platform that makes farming intelligent and empowers farmers to double their income. Farmers can get soil testing, training, crop protection, crop nutrition, seeds, agriculture equipment, and tools which is 300 + product range and which involves approx 25 + Agro-skilled experts who are available for the farmer's services. This in turn will help farmers to select the right Agri inputs for farming.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: ""
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/uplearn.ico"),
+      projectName: "Uplearn",
+      projectDesc: 'We seek to provide a platform for online education that is economically feasible to the underprivileged sections of the society. Via this platform, we aim to provide video lectures and other learning materials appropriately categorized by the class and education boards. It also facilitates educators to record video lectures and conduct doubt solving sessions for their students, all integrated into one platform',
       footerLink: [
         {
           name: "Visit Website",
