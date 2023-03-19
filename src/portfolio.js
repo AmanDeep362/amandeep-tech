@@ -23,7 +23,7 @@ const greeting = {
   username: "Amandeep Singh",
   title: "Hi all, I'm Amandeep Singh",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "I am a Full stack Web developer 🚀 Having a sufficient Knowledge of Programming . A motivated individual with in-depth knowledge of languages and development tools, seeking a position in a growth-oriented company where I can use my skills to the advantage of the company while having the scope to develop my own skills."
   ),
   resumeLink:
     "https://drive.google.com/file/d/16xpA2wLz2Bygg8CV0YW8eCZF4yAgoMTm/view?usp=sharing", // Set to empty to hide the button
@@ -189,7 +189,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: ""
+          url: "https://agroacers-frontend-h7s2guv3l-amandeep362.vercel.app/"
         }
         //  you can add extra buttons here.
       ]
@@ -201,7 +201,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://agroacers-frontend-84ka.vercel.app/"
         }
       ]
     }
@@ -330,8 +330,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-9518284740",
+  email_address: "amanbhatia5710@gmail.com"
 };
 
 // Twitter Section
