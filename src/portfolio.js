@@ -195,9 +195,20 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/uplearn.ico"),
+      image: require("./assets/images/uplearn.png"),
       projectName: "Uplearn",
       projectDesc: 'We seek to provide a platform for online education that is economically feasible to the underprivileged sections of the society. Via this platform, we aim to provide video lectures and other learning materials appropriately categorized by the class and education boards. It also facilitates educators to record video lectures and conduct doubt solving sessions for their students, all integrated into one platform',
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://agroacers-frontend-84ka.vercel.app/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/debbiedanks.png"),
+      projectName: "DebbieDanks",
+      projectDesc: 'Debbidanks is the usa online newsletter website.i developed it during my team . this project use next js on frontend and strapi for cms.',
       footerLink: [
         {
           name: "Visit Website",
