@@ -61,7 +61,7 @@ function Header() {
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <a href="https://blogs.amandeep.live/" target="_blank" rel="noopener noreferrer">Blogs</a>
             </li>
           )}
           {/* {viewTalks && (
