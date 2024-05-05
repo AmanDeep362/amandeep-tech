@@ -1,63 +1,71 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
-import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/soft_dev.json";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
-import Button from "../../components/button/Button";
+import React, { useContext, useEffect, useRef } from 'react';
+import { Fade } from 'react-reveal';
+import emoji from 'react-easy-emoji';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from 'gsap';
+import './Greeting.scss';
+import landingPerson from '../../assets/lottie/soft_dev.json';
+import DisplayLottie from '../../components/displayLottie/DisplayLottie';
+import SocialMedia from '../../components/socialMedia/SocialMedia';
+import Button from '../../components/button/Button';
 
-import {illustration, greeting} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import { illustration, greeting } from '../../portfolio';
+import StyleContext from '../../contexts/StyleContext';
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const element = elementRef.current;
+
+    gsap.to(element, {
+      y: 100,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: element,
+        start:"center top",
+        end: 300,
+        scrub: true,
+      },
+    });
+  }, []);
   if (!greeting.displayGreeting) {
     return null;
   }
+
+  
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
-          <div className="greeting-text-div">
+          <div className="greeting-text-div" ref={elementRef}>
             <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+              <h1 className={isDark ? 'dark-mode greeting-text' : 'greeting-text'}>
+                {' '}
+                {greeting.title} <span className="wave-emoji">{emoji('👋')}</span>
               </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
+              <p className={isDark ? 'dark-mode greeting-text-p' : 'greeting-text-p subTitle'}>
                 {greeting.subTitle}
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
-                  <Button
-                    text="See my resume"
-                    newTab={true}
-                    href={greeting.resumeLink}
-                  />
+                  <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
                 )}
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
+          <div className="greeting-image-div" >
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+              <img alt="man sitting on table" src={require('../../assets/images/manOnTable.svg')} />
             )}
           </div>
         </div>

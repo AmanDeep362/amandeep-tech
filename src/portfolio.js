@@ -52,12 +52,15 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for  web"
+      "⚡Progressive Web Applications (PWA) Development: Proficient in building PWAs using both traditional and Single Page Application (SPA) stacks. Expertise includes leveraging service workers, responsive design principles, and offline functionality to create engaging and reliable web experiences."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Create a content management system ( CMS )"
-    )
+      "⚡ Skilled in server-side programming languages and frameworks, enabling the creation of robust backend systems to support dynamic web applications. Proficiency in handling data persistence, authentication, and API integrations for seamless client-server communication."
+    ),
+    emoji(
+      "⚡ NetSuite Development:  Extensive experience as a NetSuite developer, adept at creating scripts, SuiteScripts, and SuiteTalk integrations to extend and customize the NetSuite platform. Capable of developing custom workflows, saved searches, and SuiteApps to automate business processes and enhance productivity."
+    ),
+
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -96,7 +99,7 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nextJs",
       fontAwesomeClassname: "fab fa-react"
     },
-   
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -113,7 +116,26 @@ const educationInfo = {
       duration: "August 2019 - may 2023",
       descBullets: [
         "Participated in Various college activities",
-        "Represent college in Smart india hackathon 2022"
+        "Represent college in Smart india hackathon 2022",
+        "8.5 CGPA",
+      ]
+    },
+    {
+      schoolName: "G.B.S Public School,Mustafabad",
+      logo: require("./assets/images/gbs.jpeg"),
+      subHeader: "12th",
+      duration: "mar 2018 - mar 2019",
+      descBullets: [
+        "67%",
+      ]
+    },
+    {
+      schoolName: "G.B.S Public School,Mustafabad",
+      logo: require("./assets/images/gbs.jpeg"),
+      subHeader: "10th",
+      duration: "mar 2010 - mar 2017",
+      descBullets: [
+        "7.8 CGPA",
       ]
     },
   ]
@@ -133,8 +155,8 @@ const techStack = {
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Netsuite",
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -145,11 +167,26 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+
+    {
+      role: "Nestuite developer",
+      company: "Heliverse",
+      companylogo: require("./assets/images/Heliverse.jpg"),
+      date: "Nov 2023 – Present",
+      desc: "Work as a netsuite developer.",
+      descBullets: [
+        "SuiteScript development (SuiteScript 2.0) for new customizations as well as updates and modifications to existing scripts.",
+        "End-to-end management of customizations, solution architecture, development, testing, and deployment.",
+        "Troubleshooting scripts, integrations, and workflows",
+        "Creation of detailed user and technical documentation for new and existing customizations.",
+        "Hosted meetings directly with clients to gather requirements, analyze situations, and provided solutions.",
+      ]
+    },
     {
       role: "Full Stack Web developer",
       company: "Heliverse",
       companylogo: require("./assets/images/Heliverse.jpg"),
-      date: "October 2022 – Present",
+      date: "October 2022 – Nov 2023",
       desc: "Work as a full stack web developer.",
       descBullets: [
         "Develop a UI of website",
@@ -212,7 +249,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://agroacers-frontend-84ka.vercel.app/"
+          url: "https://www.debbiedanks.com/"
         }
       ]
     }
@@ -270,7 +307,7 @@ const achievementSection = {
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        { name: "Certification", url: "" },
         {
           name: "Final Project",
           url: "https://pakistan-olx-1.firebaseapp.com/"
