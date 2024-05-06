@@ -341,7 +341,42 @@ const blogSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
+//Gallery Section
 
+const gallerySection = {
+  title: "Gallery",
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
+
+  images: [
+    {
+      thumbnail: 'https://i.ibb.co/jbDhKN2/gallery0.jpg',
+      original: 'https://i.ibb.co/jbDhKN2/gallery0.jpg'
+    },
+    {
+      thumbnail: 'https://i.ibb.co/Kq9pqGv/gallery1.jpg',
+      original: 'https://i.ibb.co/Kq9pqGv/gallery1.jpg'
+    },
+    {
+      thumbnail: 'https://i.ibb.co/yWJbYKz/gallery2.jpg',
+      original: 'https://i.ibb.co/yWJbYKz/gallery2.jpg'
+    },
+    {
+      thumbnail: 'https://i.ibb.co/2cGvmd1/gallery2.jpg',
+      original: 'https://i.ibb.co/2cGvmd1/gallery2.jpg'
+    },
+    {
+      thumbnail: 'https://i.ibb.co/4fyf83y/gallery4.jpg',
+      original: 'https://i.ibb.co/4fyf83y/gallery4.jpgg'
+    },
+    {
+      thumbnail: 'https://i.ibb.co/KWZyFVj/gallery5.jpg',
+      original: 'https://i.ibb.co/KWZyFVj/gallery5.jpg'
+    },
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
 // Talks Sections
 
 const talkSection = {
@@ -408,5 +443,6 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
-  isHireable
+  isHireable,
+  gallerySection
 };
