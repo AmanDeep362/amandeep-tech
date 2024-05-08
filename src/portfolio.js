@@ -169,7 +169,7 @@ const workExperiences = {
   experience: [
 
     {
-      role: "Nestuite developer",
+      role: "Netsuite developer",
       company: "Heliverse",
       companylogo: require("./assets/images/Heliverse.jpg"),
       date: "Nov 2023 – Present",
